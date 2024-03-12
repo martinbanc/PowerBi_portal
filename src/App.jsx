@@ -1,16 +1,11 @@
-import { SignedIn, SignedOut, SignIn, UserButton, SignOutButton } from "@clerk/clerk-react";
+import { SignedIn, SignedOut, UserButton, SignOutButton } from "@clerk/clerk-react";
+import Login from "./pages/Login";
 
 function App() {
 	return (
 		<>
 			<SignedOut>
-				<SignIn
-					appearance={{
-						elements: {
-							footerAction: { display: "none" },
-						},
-					}}
-				/>
+				<Login />
 			</SignedOut>
 			<SignedIn>
 				<h1>Logged In</h1>
