@@ -1,5 +1,4 @@
 import { SignedIn, SignedOut, SignIn, UserButton, SignOutButton } from "@clerk/clerk-react";
-// import LoginForm from "./pages/LoginForm";
 
 function App() {
 	return (
@@ -16,7 +15,7 @@ function App() {
 			<SignedIn>
 				<h1>Logged In</h1>
 				<UserButton />
-				<SignOutButton redirectUrl="/" />
+				<SignOutButton />
 			</SignedIn>
 		</>
 	);
