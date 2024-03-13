@@ -1,14 +1,13 @@
-import NavBar from './components/NavBar';
-import './styles/main.css';
+import LoginForm from "./pages/LoginForm";
+import Dashboard from "./pages/Dashboard";
 
 function App() {
 	return (
-		<div className="App">
-			<div className="NavBarContainer">  
-				<NavBar />
-			</div>
-			<h1>Hello Vite!</h1>
-		</div>
+		<>
+			<LoginForm />
+			<Dashboard />
+		</>
+
 	);
 }
 
