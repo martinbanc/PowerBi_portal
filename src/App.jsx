@@ -1,13 +1,18 @@
-import LoginForm from "./pages/LoginForm";
-import Dashboard from "./pages/Dashboard";
+import { SignedIn, SignedOut, UserButton, SignOutButton } from "@clerk/clerk-react";
+import Login from "./pages/Login";
 
 function App() {
 	return (
 		<>
-			<LoginForm />
-			<Dashboard />
+			<SignedOut>
+				<Login />
+			</SignedOut>
+			<SignedIn>
+				<h1>Logged In</h1>
+				<UserButton />
+				<SignOutButton />
+			</SignedIn>
 		</>
-
 	);
 }
 
