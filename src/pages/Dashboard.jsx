@@ -1,7 +1,8 @@
 
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGear, faRightFromBracket, faGauge, faChartLine} from '@fortawesome/free-solid-svg-icons'
+import CardContainer from "../components/CardContainer"
 
 import "../styles/dashboard.css";
 
@@ -29,21 +30,19 @@ const logoSrc = 'https://www.phoenixs.co.uk/wp-content/themes/phoenix/_/images/l
         },
     ]
     return(
-        <div className="container">
+        <><div className="container">
             <div className="sidebar">
                 <div className="top_section">
                     <div className="bars">
                         <img src={logoSrc} alt="phoenix Logo" />
                     </div>
                 </div>
-                {
-                    menuItem.map((item, index)=>(
-                        <NavLink to={item.path} key={index} className="link" activeclassname="active">
-                            <div className="icon">{item.icon}</div>
-                            <div className="link_text">{item.name}</div>
-                        </NavLink>
-                    ))
-                }
+                {menuItem.map((item, index) => (
+                    <div to={item.path} key={index} className="link" activeclassname="active">
+                        <div className="icon">{item.icon}</div>
+                        <div className="link_text">{item.name}</div>
+                    </div>
+                ))}
                 <div className="sectionD">
                     <div className="p">
                         <img src="assets/images/p,jpg" alt="" />
@@ -53,11 +52,13 @@ const logoSrc = 'https://www.phoenixs.co.uk/wp-content/themes/phoenix/_/images/l
                     <button className="btn">More</button>
                 </div>
                 <div className="circel">
-                    
+
                 </div>
             </div>
+            <CardContainer/>
         </div>
-       
+
+        </>
  
     );
 }
