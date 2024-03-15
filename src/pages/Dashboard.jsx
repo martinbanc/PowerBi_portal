@@ -2,6 +2,8 @@
 import { FaGauge, FaChartLine, FaGear, FaRightFromBracket } from "react-icons/fa6";
 import CardContainer from "../components/CardContainer";
 import pLogo from "../assets/images/pLogo.jpg";
+import SignOutBtn from "../components/SignOutBtn";
+
 import "../styles/dashboard.css";
 
 const Dashboard = () => {
@@ -24,7 +26,7 @@ const Dashboard = () => {
 		},
 		{
 			path: "/",
-			name: "Sign Out",
+			name: <SignOutBtn className="sign-out-text"/>,
 			icon: <FaRightFromBracket />,
 		},
 	];
@@ -48,7 +50,6 @@ const Dashboard = () => {
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum</p>
 					<button className="btn">More</button>
 				</div>
-				<div className="circel"></div>
 			</div>
 			<CardContainer />
 		</div>
