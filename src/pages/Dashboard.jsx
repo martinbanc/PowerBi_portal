@@ -32,9 +32,7 @@ const Dashboard = () => {
 		<div className="container">
 			<div className="sidebar">
 				<div className="top_section">
-					<div className="bars">
-						<img src={logoSrc} alt="phoenix Logo" />
-					</div>
+					<img src={logoSrc} alt="phoenix Logo" />
 				</div>
 				{menuItem.map((item, index) => (
 					<div to={item.path} key={index} className="link" activeclassname="active">
