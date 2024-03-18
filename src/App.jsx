@@ -1,5 +1,8 @@
-import { SignedIn, SignedOut, UserButton, SignOutButton } from "@clerk/clerk-react";
+import { SignedIn, SignedOut } from "@clerk/clerk-react";
 import Login from "./pages/Login";
+import 'apexcharts/dist/apexcharts.css';
+import Dashboard from "./pages/Dashboard";
+import NavBar from "./components/NavBar"
 
 function App() {
 	return (
@@ -8,9 +11,8 @@ function App() {
 				<Login />
 			</SignedOut>
 			<SignedIn>
-				<h1>Logged In</h1>
-				<UserButton />
-				<SignOutButton />
+				<NavBar />
+				<Dashboard />
 			</SignedIn>
 		</>
 	);
