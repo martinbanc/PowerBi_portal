@@ -12,7 +12,14 @@ if (!PUBLISHABLE_KEY) {
 
 ReactDOM.createRoot(document.getElementById("root")).render(
 	<React.StrictMode>
-		<ClerkProvider publishableKey={PUBLISHABLE_KEY}>
+		<ClerkProvider
+			appearance={{
+				variables: {
+					colorPrimary: "#f15a29",
+				},
+			}}
+			publishableKey={PUBLISHABLE_KEY}
+		>
 			<App />
 		</ClerkProvider>
 	</React.StrictMode>
