@@ -1,5 +1,6 @@
 import { UserButton } from "@clerk/clerk-react";
 import "../styles/main.css";
+import SignOutBtn from "./SignOutBtn";
 const Image = ({ src, className, alt }) => <img src={src} className={className} alt={alt} />;
 
 const NavBar = () => {
@@ -26,6 +27,7 @@ const NavBar = () => {
 			<div className="user">
 				<Image src={bellSrc} className="notification-bell" alt="Notification Bell" />
 				<UserButton />
+				<SignOutBtn className="btn" />
 			</div>
 		</div>
 	);
