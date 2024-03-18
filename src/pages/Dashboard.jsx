@@ -16,7 +16,7 @@ const Dashboard = () => {
 		},
 		{
 			path: "/",
-			name: "Repot",
+			name: "Reports",
 			icon: <FaChartLine />,
 		},
 		{

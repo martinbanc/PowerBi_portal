@@ -30,14 +30,14 @@ export default class ComparisonBarChart extends Component {
             max: 25000,
           },
         fill: {
-          colors: ['#2196F3', '#FF9800']
+          colors: ['#2196F3', '#f15a29']
         },
         legend: {
             labels: {
               colors: "#000000" // Black labels
             },
             markers: {
-              fillColors: ['#2196F3', '#FF9800'] // Blue and orange colors for the legend markers
+              fillColors: ['#2196F3', '#f15a29'] // Blue and orange colors for the legend markers
             }
           }
       },
