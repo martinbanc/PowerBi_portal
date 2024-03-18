@@ -29,7 +29,7 @@ export default class LineGraph extends Component {
             min: 0,
             max: 25000,
           },
-        colors: ['#2196F3', '#FF9800'] // Blue and orange colors
+        colors: ['#2196F3', '#f15a29'] // Blue and orange colors
       },
       series: [
         {

@@ -30,7 +30,7 @@ export default class BarChart extends Component {
           max: 25000,
         },
         fill: {
-          colors: ['#2196F3', '#FF9800']
+          colors: ['#2196F3', '#f15a29']
         }
       },
       series: [
