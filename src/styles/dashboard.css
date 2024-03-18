@@ -11,7 +11,6 @@ body {
 }
 main {
 	width: 100%;
-
 }
 .sidebar {
 	width: 17rem;
@@ -61,12 +60,18 @@ main {
 	font-size: 20px;
 }
 
+.link_text {
+	width: 100%;
+}
+
 .sign-out-text {
 	background: none;
 	border: none;
-	color:#737791;
+	color: #737791;
 	font-size: 1rem;
 	cursor: pointer;
+	width: 100%;
+	text-align: left;
 }
 
 .link:hover .sign-out-text {
@@ -88,7 +93,6 @@ main {
 	position: absolute;
 	bottom: 2rem;
 }
-
 
 .p {
 	width: 50px;
