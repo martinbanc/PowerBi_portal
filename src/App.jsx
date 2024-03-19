@@ -1,8 +1,10 @@
 import { SignedIn, SignedOut } from "@clerk/clerk-react";
 import Login from "./pages/Login";
 import 'apexcharts/dist/apexcharts.css';
-import Dashboard from "./pages/Dashboard";
+// import Dashboard from "./pages/Dashboard";
 import NavBar from "./components/NavBar"
+import DataForms from "./pages/DataForms";
+
 
 function App() {
 	return (
@@ -12,7 +14,8 @@ function App() {
 			</SignedOut>
 			<SignedIn>
 				<NavBar />
-				<Dashboard />
+				{/* <Dashboard /> */}
+				<DataForms />	
 			</SignedIn>
 		</>
 	);
