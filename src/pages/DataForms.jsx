@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import ActivityForm from '../components/ActivityForm';
 import ContractForm from '../components/ContractForm';
+import ProxyCalcForm from '../components/ProxyCalcForm';
+import TomsForm from '../components/TomsForm';
 
 const DataForms = () => {
     const [formData, setFormData] = useState({
@@ -19,7 +21,24 @@ const DataForms = () => {
         contractEndDate: '',
         location: '',
         contractInfo: '',
-        additionalYear: ''
+        additionalYear: '',
+        proxyId: '',
+        proxyContractId: '',
+        proxyThemeName: '',
+        proxyReferences: '',
+
+      proxyUnit: '',
+        proxyValue: '',
+        commitedNumber: '',
+        proxyCommitedValue: '',
+        deliveredNumber: '',
+        proxyDeliveredValue: '',
+        tomsThemeName: '',
+        outcomes: '',
+        tomsReferenceId: '',
+        measure: '',
+        tomsProxyUnit: '',
+        perUnitValue: '',
     });
 
     const handleChange = (e) => {
@@ -39,6 +58,8 @@ const DataForms = () => {
         <form onSubmit={handleSubmit}>
             <ActivityForm formData={formData} handleChange={handleChange} />
             <ContractForm formData={formData} handleChange={handleChange} />
+            <ProxyCalcForm formData={formData} handleChange={handleChange} />
+            <TomsForm formData={formData} handleChange={handleChange} />
             <button type="submit">Submit</button>
         </form>
     );
