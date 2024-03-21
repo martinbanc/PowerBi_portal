@@ -9,10 +9,9 @@ body {
 .container {
 	display: flex;
 }
-main {
-	width: 100%;
-}
+
 .sidebar {
+	position: fixed;
 	width: 17rem;
 	background: #ffffff;
 	color: #151515;
@@ -111,4 +110,10 @@ main {
 
 .btn:hover {
 	background: #6e6f72;
+}
+.card{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 0 16rem;
 }

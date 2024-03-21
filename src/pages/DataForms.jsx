@@ -4,6 +4,7 @@ import ContractForm from '../components/ContractForm';
 import ProxyCalcForm from '../components/ProxyCalcForm';
 import TomsForm from '../components/TomsForm';
 
+
 const DataForms = () => {
     const [formData, setFormData] = useState({
         contractId: '',
@@ -12,7 +13,7 @@ const DataForms = () => {
         references: '',
         activityName: '',
         activityDesc: '',
-        contractId: '',
+        ContractId: '',
         customerName: '',
         status: '',
         commitedValue: '',
@@ -56,12 +57,16 @@ const DataForms = () => {
 
     return (
         <form onSubmit={handleSubmit}>
-            <ActivityForm formData={formData} handleChange={handleChange} />
-            <ContractForm formData={formData} handleChange={handleChange} />
-            <ProxyCalcForm formData={formData} handleChange={handleChange} />
-            <TomsForm formData={formData} handleChange={handleChange} />
-            <button type="submit">Submit</button>
-        </form>
+            <div className='forms'>
+                <ActivityForm formData={formData} handleChange={handleChange} />
+                <ContractForm formData={formData} handleChange={handleChange} />
+                <ProxyCalcForm formData={formData} handleChange={handleChange} />
+                <TomsForm formData={formData} handleChange={handleChange} />
+            </div>
+            <div>
+                <button type="submit" className='btn-Submit'>Submit</button>
+            </div>
+              </form>
     );
 };
 

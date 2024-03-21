@@ -1,22 +1,40 @@
 import { SignedIn, SignedOut } from "@clerk/clerk-react";
 import Login from "./pages/Login";
 import 'apexcharts/dist/apexcharts.css';
-// import Dashboard from "./pages/Dashboard";
-import NavBar from "./components/NavBar"
-import DataForms from "./pages/DataForms";
+// import NavBar from "./components/NavBar";
+// import Sidebar from "./components/sidebar";
+import Layout from "./pages/Layout.jsx";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Dashboard from "./pages/Dashboard.jsx";
+import DataForms from "./pages/DataForms.jsx";
+import Settings from "./pages/Settings.jsx";
+import NotFound from "./pages/NotFound.jsx";
+
+// const routes = BrowserRouter([
+// { path: "/", element:<Dashboard/>},
+// { path: "/Data", element:<DataForms/>}
+// ])
+
 
 
 function App() {
 	return (
 		<>
+		<BrowserRouter>
 			<SignedOut>
 				<Login />
 			</SignedOut>
 			<SignedIn>
-				<NavBar />
-				{/* <Dashboard /> */}
-				<DataForms />	
-			</SignedIn>
+				<Routes>
+					<Route path="/" element={<Layout />}>
+						<Route index element={<Dashboard />} />
+						<Route path="/forms" element={<DataForms />} />
+						<Route path="/settings" element={<Settings />}/>
+						<Route path="*" element={<NotFound />}/>
+					</Route>
+				</Routes>
+			</SignedIn>	
+		</BrowserRouter>
 		</>
 	);
 }
