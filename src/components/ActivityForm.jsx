@@ -1,6 +1,8 @@
+import "../styles/dataForms.css";
+
 const ActivityForm = ({ formData, handleChange }) => {
   return (
-    <div>
+    <div className="formTemplate activity">
         <h1>Activity</h1>
             <label>
                 Contract ID

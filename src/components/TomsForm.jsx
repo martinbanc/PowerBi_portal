@@ -1,6 +1,8 @@
+import "../styles/dataForms.css";
+
 const TomsForm = ({ formData, handleChange }) => {
   return (
-    <div>
+    <div className="formTemplate toms">
         <h1>TOMs Framework</h1>
             <label>
                 Theme Name 

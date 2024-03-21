@@ -1,6 +1,8 @@
+import "../styles/dataForms.css";
+
 const ContractForm = ({ formData, handleChange }) => {
     return (
-      <div>
+      <div className="formTemplate contract">
           <h1>Contract</h1>
               <label>
                   Contract ID

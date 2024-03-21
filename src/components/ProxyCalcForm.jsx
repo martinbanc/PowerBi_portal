@@ -1,6 +1,8 @@
-const ActivityForm = ({ formData, handleChange }) => {
+import "../styles/dataForms.css";
+
+const ProxyCalcForm = ({ formData, handleChange }) => {
   return (
-    <div>
+    <div className="formTemplate proxy">
         <h1>Proxy Calculator</h1>
             <label>
                 Proxy ID
@@ -105,4 +107,4 @@ const ActivityForm = ({ formData, handleChange }) => {
     </div>
   )
 }
-export default ActivityForm;
+export default ProxyCalcForm;
