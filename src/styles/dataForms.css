@@ -1,4 +1,4 @@
-form{
+.dataform{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -104,4 +104,28 @@ form{
 
 .btn-Submit:hover {
 	background-color: black;
+}
+@media screen and (max-width: 855px){
+    .formTemplate{
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .dataform{
+        margin: 0;
+        margin-top: 3rem;
+    }
+    .formTemplate{
+        width: 400px;
+    }
+    .btn-Submit{
+        width: 300px;
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+    .formTemplate label input, 
+    .formTemplate label textarea{
+        width: 60%;
+    }
 }
