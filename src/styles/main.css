@@ -5,9 +5,14 @@
 	justify-content: flex-end;
 	gap: 2rem;
 	align-items: center;
-	width: 80%;
+	width: 90%;
 	padding: 0.25rem 2rem; /* Decrease the padding to make the navbar smaller */
 	background-color: #fff;
+	z-index: 100;
+}
+
+.navbar .img-logo{
+	display: none;
 }
 
 .navbar img {
@@ -32,6 +37,18 @@
 @media screen and (max-width: 768px) {
 	/* Apply styles when the window size is 768px or smaller */
 	.navbar {
-		padding: 0.125rem; /* Further decrease the padding for smaller screens */
+		width: 100%; /* Further decrease the padding for smaller screens */
+		padding: 0.5rem 1rem;
 	}
+	.navbar .img-logo{
+		position: absolute;
+		left: 38%;
+		display: block;
+		padding: 6px 0;
+	}
+	.notification-bell, .language-select, .search-bar, .btn{
+		display: none;
+	}
+	
 }
+

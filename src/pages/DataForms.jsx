@@ -56,7 +56,7 @@ const DataForms = () => {
     };
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className='dataform'>
             <div className='forms'>
                 <ActivityForm formData={formData} handleChange={handleChange} />
                 <ContractForm formData={formData} handleChange={handleChange} />

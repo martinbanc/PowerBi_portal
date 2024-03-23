@@ -18,7 +18,10 @@ body {
 	height: 100vh;
 	padding: 1rem;
 	margin-right: 1rem;
+	z-index: 100;
 }
+
+
 .top_section {
 	width: 15rem;
 	display: flex;
@@ -108,6 +111,9 @@ body {
 	margin: 1rem;
 }
 
+.btn a{
+	color: #f15a29;
+}
 .btn:hover {
 	background: #6e6f72;
 }
@@ -116,4 +122,45 @@ body {
     align-items: center;
     justify-content: center;
     margin: 0 0 0 16rem;
+}
+.btn-toggle{
+	position: fixed;
+	background-color: #ffffff;
+	border: none;
+	margin: 10px;
+	z-index: 110;
+	visibility: hidden;
+	opacity: 0;
+}
+
+
+
+.btn-toggle span{
+	font-size: 25px;
+	cursor: pointer;
+	background: transparent;
+	outline: none;
+	border: none;
+	color: #f15a29;
+}
+
+@media screen and (max-width: 768px){
+	.card{
+		margin: 0;
+	}
+	.btn-toggle{
+		visibility: visible;
+		opacity: 1;
+	}
+	.side-open{
+		left: 0;
+	}
+	
+	.side-close{
+		left: -18rem;
+	}
+	.top_section{
+		margin-top: 1rem;
+	}
+	
 }
