@@ -68,7 +68,9 @@ const ContractForm = ({ formData, setFormData }) => {
 					<input type="number" name="additionalYear" value={formData.additionalYear} onChange={handleChange} />
 				</label>
 				<br />
-				<button type="submit">Submit</button>
+				<button className="btn" type="submit">
+					Submit
+				</button>
 			</div>
 		</form>
 	);

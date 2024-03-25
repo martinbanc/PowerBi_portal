@@ -46,7 +46,9 @@ const TomsForm = ({ formData, setFormData }) => {
 					Per unit Value
 					<input type="number" name="Per unit Value" value={formData.perUnitValue} onChange={handleChange} />
 				</label>
-				<button type="submit">Submit</button>
+				<button className="btn" type="submit">
+					Submit
+				</button>
 			</div>
 		</form>
 	);

@@ -67,7 +67,9 @@ const ProxyCalcForm = ({ formData, setFormData }) => {
 					<input type="number" name="deliveredValue" value={formData.proxyDeliveredValue} onChange={handleChange} />
 				</label>
 				<br />
-				<button type="submit">Submit</button>
+				<button className="btn" type="submit">
+					Submit
+				</button>
 			</div>
 		</form>
 	);

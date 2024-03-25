@@ -13,7 +13,6 @@
 	z-index: 100;
 }
 
-
 .top_section {
 	width: 15rem;
 	display: flex;
@@ -104,7 +103,7 @@
 	margin: 1rem;
 }
 
-.btn a{
+.btn a {
 	color: #f15a29;
 	text-decoration: none;
 }
@@ -118,7 +117,7 @@
 	margin: 5rem 2rem;
 	margin-left: 18rem;
 }
-.btn-toggle{
+.btn-toggle {
 	position: fixed;
 	background-color: #ffffff;
 	border: none;
@@ -128,9 +127,7 @@
 	opacity: 0;
 }
 
-
-
-.btn-toggle span{
+.btn-toggle span {
 	font-size: 25px;
 	cursor: pointer;
 	background: transparent;
@@ -139,23 +136,22 @@
 	color: #f15a29;
 }
 
-@media screen and (max-width: 768px){
-	.card{
+@media screen and (max-width: 920px) {
+	.card {
 		margin: 5rem 2rem;
 	}
-	.btn-toggle{
+	.btn-toggle {
 		visibility: visible;
 		opacity: 1;
 	}
-	.side-open{
+	.side-open {
 		left: 0;
 	}
-	
-	.side-close{
+
+	.side-close {
 		left: -18rem;
 	}
-	.top_section{
+	.top_section {
 		margin-top: 1rem;
 	}
-	
 }
