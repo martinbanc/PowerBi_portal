@@ -1,3 +1,5 @@
+import "../styles/dashboard.css";
+
 const Dashboard = () => {
 	return (
 		<div className="card">

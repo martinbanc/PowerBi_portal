@@ -13,7 +13,7 @@
 }
 .formTemplate{
     min-height: 600px;
-    width: 600px;
+    width: 500px;
     background-color: white;
     margin: 1rem;
     padding: 2rem;
@@ -104,11 +104,6 @@
 
 .btn-Submit:hover {
 	background-color: black;
-}
-@media screen and (max-width: 855px){
-    .formTemplate{
-        width: 500px;
-    }
 }
 
 @media screen and (max-width: 768px){
