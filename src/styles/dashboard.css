@@ -35,6 +35,7 @@
 	border-radius: 10px;
 	transition: all 0.5s;
 	margin: 1rem;
+	text-decoration: none;
 }
 .link:hover {
 	background: #f15a29;
@@ -105,6 +106,7 @@
 
 .btn a{
 	color: #f15a29;
+	text-decoration: none;
 }
 .btn:hover {
 	background: #6e6f72;
@@ -113,7 +115,8 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin: 10rem 0 0 16rem;
+	margin: 5rem 2rem;
+	margin-left: 18rem;
 }
 .btn-toggle{
 	position: fixed;
@@ -138,7 +141,7 @@
 
 @media screen and (max-width: 768px){
 	.card{
-		margin: 0;
+		margin: 5rem 2rem;
 	}
 	.btn-toggle{
 		visibility: visible;
