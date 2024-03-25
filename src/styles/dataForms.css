@@ -1,24 +1,28 @@
-form {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	margin: 4rem 0 0 18rem;
+
+.dataform{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 4rem 0 0 18rem;
 }
+
 .forms {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
 	align-items: first baseline;
 }
-.formTemplate {
-	min-height: 600px;
-	width: 600px;
-	background-color: white;
-	margin: 1rem;
-	padding: 2rem;
-	font-family: "Times New Roman", Times, serif;
-	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+.formTemplate{
+    min-height: 600px;
+    width: 500px;
+    background-color: white;
+    margin: 1rem;
+    padding: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  
 }
 
 .formTemplate h1 {
@@ -103,3 +107,24 @@ form {
 .btn-Submit:hover {
 	background-color: black;
 }
+
+
+@media screen and (max-width: 768px){
+    .dataform{
+        margin: 0;
+        margin-top: 3rem;
+    }
+    .formTemplate{
+        width: 400px;
+    }
+    .btn-Submit{
+        width: 300px;
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+    .formTemplate label input, 
+    .formTemplate label textarea{
+        width: 60%;
+    }
+}
+

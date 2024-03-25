@@ -1,14 +1,21 @@
 import { FaGauge, FaChartLine, FaGear, FaRightFromBracket } from "react-icons/fa6";
+import { FaBars, FaTimes } from "react-icons/fa";
 import SignOutBtn from "./SignOutBtn";
 import pLogo from "../assets/images/pLogo.jpg";
 import { NavLink } from "react-router-dom";
+import { useState } from "react";
 import "../styles/dashboard.css";
 
 const Sidebar = () => {
         const logoSrc = "https://www.phoenixs.co.uk/wp-content/themes/phoenix/_/images/logo.png";
+        const [isNavOpen, setIsNavOpen] = useState(false);
+        
         return (
-            <div className="container">
-                <div className="sidebar">
+            <div className="container" >
+                <button className="btn-toggle" onClick={() => setIsNavOpen(!isNavOpen)}>
+                    <span>{isNavOpen ? <FaTimes/> :<FaBars/> }</span>
+                </button>
+                <div className={`sidebar ${isNavOpen ? "side-open" : "side-close"}`} >
                     <div className="top_section">
                         <img src={logoSrc} alt="phoenix Logo" />
                     </div>
@@ -34,7 +41,7 @@ const Sidebar = () => {
                         </div>
                         <h3>Phoenix</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum</p>
-                        <button className="btn">More</button>
+                        <button className="btn"><a href="https://www.phoenixs.co.uk/">More</a></button>
                     </div>
                 </div>
             </div>

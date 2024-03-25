@@ -5,41 +5,6 @@ import ProxyCalcForm from "../components/ProxyCalcForm";
 import TomsForm from "../components/TomsForm";
 
 const DataForms = () => {
-	// const [formData, setFormData] = useState({
-	//     contractId: '',
-	//     activityId: '',
-	//     themeName: '',
-	//     references: '',
-	//     activityName: '',
-	//     activityDesc: '',
-	//     ContractId: '',
-	//     customerName: '',
-	//     status: '',
-	//     commitedValue: '',
-	//     deliveredValue: '',
-	//     contractStartDate: '',
-	//     contractEndDate: '',
-	//     location: '',
-	//     contractInfo: '',
-	//     additionalYear: '',
-	//     proxyId: '',
-	//     proxyContractId: '',
-	//     proxyThemeName: '',
-	//     proxyReferences: '',
-
-	//   proxyUnit: '',
-	//     proxyValue: '',
-	//     commitedNumber: '',
-	//     proxyCommitedValue: '',
-	//     deliveredNumber: '',
-	//     proxyDeliveredValue: '',
-	//     tomsThemeName: '',
-	//     outcomes: '',
-	//     tomsReferenceId: '',
-	//     measure: '',
-	//     tomsProxyUnit: '',
-	//     perUnitValue: '',
-	// });
 
 	const [activityFormData, setActivityFormData] = useState([
 		{
