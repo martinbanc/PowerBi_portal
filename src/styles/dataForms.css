@@ -1,3 +1,4 @@
+
 .dataform{
     display: flex;
     align-items: center;
@@ -5,12 +6,14 @@
     flex-direction: column;
     margin: 4rem 0 0 18rem;
 }
-.forms{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-   
+
+.forms {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-items: first baseline;
 }
+
 .formTemplate{
     min-height: 600px;
     width: 500px;
@@ -22,73 +25,73 @@
   
 }
 
-.formTemplate h1{
-    margin: 0.5rem;
-    margin-bottom: 1rem;
-    color:#f15a29;
+.formTemplate h1 {
+	margin: 0.5rem;
+	margin-bottom: 1rem;
+	color: #f15a29;
 }
 
-.formTemplate label{
-    font-family: 'Times New Roman', Times, serif;
-    display: flex;
-   justify-content: space-between;
-   align-items: center;
-   margin: 0.5rem 0;
+.formTemplate label {
+	font-family: "Times New Roman", Times, serif;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0.5rem 0;
 }
 
-.formTemplate label input{
-    width: 70%;
-    padding: 2px 10px;
-    height: 2rem;
-    border-radius: 15px;
-    border: none;
-    border-left: 2px solid #f08b6a;
-    border-bottom: 2px solid #f08b6a;
-    outline: none;
+.formTemplate label input {
+	width: 70%;
+	padding: 2px 10px;
+	height: 2rem;
+	border-radius: 15px;
+	border: none;
+	border-left: 2px solid #f08b6a;
+	border-bottom: 2px solid #f08b6a;
+	outline: none;
 }
-.formTemplate label textarea{
-    width: 70%;
-    height: 3rem;
-    padding: 5px 15px;
-    border-radius: 15px;
-    border: none;
-    border-bottom: 2px solid #f08b6a;
-    border-left: 2px solid #f08b6a;
-    outline: none;
+.formTemplate label textarea {
+	width: 70%;
+	height: 3rem;
+	padding: 5px 15px;
+	border-radius: 15px;
+	border: none;
+	border-bottom: 2px solid #f08b6a;
+	border-left: 2px solid #f08b6a;
+	outline: none;
 }
 
-.contract h1{
-    color: #17A2D9;
+.contract h1 {
+	color: #17a2d9;
 }
 
 .contract label input,
-.contract label textarea{
-    border-bottom: 2px solid#a3cef7;
-    border-left: 2px solid #a3cef7;
+.contract label textarea {
+	border-bottom: 2px solid#a3cef7;
+	border-left: 2px solid #a3cef7;
 }
 
-.proxy h1{
-    color: #01aa72;
+.proxy h1 {
+	color: #01aa72;
 }
 
 .proxy label input,
-.proxy label textarea{
-    border-bottom: 2px solid #00E096;
-    border-left: 2px solid #00E096;
+.proxy label textarea {
+	border-bottom: 2px solid #00e096;
+	border-left: 2px solid #00e096;
 }
 
-.toms h1{
-    color: #FFA800;
+.toms h1 {
+	color: #ffa800;
 }
 
 .toms label input,
-.toms label textarea{
-    border-bottom: 2px solid #FFA800;
-    border-left: 2px solid #FFA800;
+.toms label textarea {
+	border-bottom: 2px solid #ffa800;
+	border-left: 2px solid #ffa800;
 }
 
-.btn-Submit{
-    margin: 2rem;
+.btn-Submit {
+	margin: 2rem;
 	width: 500px;
 	border-radius: 15px;
 	padding-block: 15px;
@@ -98,13 +101,13 @@
 	cursor: pointer;
 	border: none;
 	transition: 0.25s;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-  
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
 .btn-Submit:hover {
 	background-color: black;
 }
+
 
 @media screen and (max-width: 768px){
     .dataform{
@@ -124,3 +127,4 @@
         width: 60%;
     }
 }
+

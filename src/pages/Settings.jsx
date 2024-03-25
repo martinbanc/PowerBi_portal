@@ -1,9 +1,11 @@
-
-
+import { UserProfile } from "@clerk/clerk-react";
+import "../styles/settings.css";
 
 const Settings = () => {
-  return (
-    <div><h1>Settings pa</h1></div>
-  )
-}
-export default Settings
+	return (
+		<div className="settings-wrapper">
+			<UserProfile />
+		</div>
+	);
+};
+export default Settings;

@@ -1,73 +1,76 @@
-import { useState } from 'react';
-import ActivityForm from '../components/ActivityForm';
-import ContractForm from '../components/ContractForm';
-import ProxyCalcForm from '../components/ProxyCalcForm';
-import TomsForm from '../components/TomsForm';
-
+import { useState } from "react";
+import ActivityForm from "../components/ActivityForm";
+import ContractForm from "../components/ContractForm";
+import ProxyCalcForm from "../components/ProxyCalcForm";
+import TomsForm from "../components/TomsForm";
 
 const DataForms = () => {
-    const [formData, setFormData] = useState({
-        contractId: '',
-        activityId: '',
-        themeName: '',
-        references: '',
-        activityName: '',
-        activityDesc: '',
-        ContractId: '',
-        customerName: '',
-        status: '',
-        commitedValue: '',
-        deliveredValue: '',
-        contractStartDate: '',
-        contractEndDate: '',
-        location: '',
-        contractInfo: '',
-        additionalYear: '',
-        proxyId: '',
-        proxyContractId: '',
-        proxyThemeName: '',
-        proxyReferences: '',
 
-      proxyUnit: '',
-        proxyValue: '',
-        commitedNumber: '',
-        proxyCommitedValue: '',
-        deliveredNumber: '',
-        proxyDeliveredValue: '',
-        tomsThemeName: '',
-        outcomes: '',
-        tomsReferenceId: '',
-        measure: '',
-        tomsProxyUnit: '',
-        perUnitValue: '',
-    });
+	const [activityFormData, setActivityFormData] = useState([
+		{
+			Contractid: "",
+			activityID: "",
+			themeName: "",
+			references: "",
+			activityName: "",
+			activityDesc: "",
+			servicesProvided: "",
+			status: "",
+			proxyUnit: "",
+			proxyValue: "",
+			committedUnits: "",
+			committedValue: "",
+			deliveredUnits: "",
+			deliveredValue: "",
+			startDate: "",
+			endDate: "",
+			departmentLead: "",
+		},
+	]);
 
-    const handleChange = (e) => {
-        setFormData({
-            ...formData,
-            [e.target.name]: e.target.value
-        });
-    };
+	const [contractFormData, setContractFormData] = useState({
+		contractId: "",
+		customerName: "",
+		status: "",
+		committedValue: "",
+		deliveredValue: "",
+		contractStartDate: "",
+		contractEndDate: "",
+		location: "",
+		contractInfo: "",
+		additionalYear: "",
+	});
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        // Handle form submission logic here
-        console.log(formData);
-    };
+	const [proxyFormData, setProxyFormData] = useState({
+		proxyId: "",
+		contractId: "",
+		themeName: "",
+		references: "",
+		proxyUnit: "",
+		proxyValue: "",
+		commitedNumber: "",
+		commitedValue: "",
+		deliveredNumber: "",
+		deliveredValue: "",
+	});
 
-    return (
-        <form onSubmit={handleSubmit} className='dataform'>
-            <div className='forms'>
-                <ActivityForm formData={formData} handleChange={handleChange} />
-                <ContractForm formData={formData} handleChange={handleChange} />
-                <ProxyCalcForm formData={formData} handleChange={handleChange} />
-                <TomsForm formData={formData} handleChange={handleChange} />
-            </div>
-            <div>
-                <button type="submit" className='btn-Submit'>Submit</button>
-            </div>
-              </form>
-    );
+	const [tomsFormData, setTomsFormData] = useState({
+		tomsThemeName: "",
+		outcomes: "",
+		tomsReferenceId: "",
+		measure: "",
+		tomsProxyUnit: "",
+		perUnitValue: "",
+	});
+
+	return (
+		<div className="forms">
+			<ActivityForm formData={activityFormData} setFormData={setActivityFormData} />
+			<ContractForm formData={contractFormData} setFormData={setContractFormData} />
+			<ProxyCalcForm formData={proxyFormData} setFormData={setProxyFormData} />
+			<TomsForm formData={tomsFormData} setFormData={setTomsFormData} />
+		</div>
+	);
 };
 
 export default DataForms;
