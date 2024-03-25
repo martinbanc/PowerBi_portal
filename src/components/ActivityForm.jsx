@@ -104,7 +104,9 @@ const ActivityForm = ({ formData, setFormData }) => {
 					<input type="text" name="Department Lead" value={formData.departmentLead} onChange={handleChange} />
 				</label>
 				<br />
-				<button type="submit">Submit</button>
+				<button className="btn" type="submit">
+					Submit
+				</button>
 			</div>
 		</form>
 	);
