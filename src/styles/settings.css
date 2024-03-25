@@ -1,0 +1,10 @@
+.settings-wrapper {
+	display: flex;
+	justify-content: flex-end;
+	align-content: center;
+	margin-top: 10rem;
+}
+
+.cl-internal-rx251b {
+	width: 40rem;
+}
